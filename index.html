@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game tank test</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="mapa">
+    </div>
+    <div class="tank" id="tank1"></div>
+    <div id="control"> </div>
+</body>
+<script>
+    var tank1_speed = 0;
+    tank1_x = 0;
+    tank1_y = 0;
+    tank1_angle = 0;
+
+    window.onload = function() {
+        document.onkeypress = mostrarInformacionCaracter;
+    }
+    function mostrarInformacionCaracter(evObject) {
+        var msg = ''; var elCaracter = String.fromCharCode(evObject.which);
+        eventoControlado=true;
+        if(elCaracter=='w' && tank1_speed<5) {
+            tank1_speed += 1;
+        } else if(elCaracter=='s' && tank1_speed>-5) {
+            tank1_speed -= 1;
+        }
+        if(elCaracter=='a') {
+            tank1_angle -= 1;
+        } else if(elCaracter=='d') {
+            tank1_angle += 1;
+        }
+        console.log(document.getElementById('tank1').style.left);
+        tank1_x += Math.floor(Math.cos( Math.PI * tank1_angle / 180 ) * tank1_speed);
+        tank1_y += Math.floor(Math.sin( Math.PI * tank1_angle / 180 ) * tank1_speed);
+
+        // tank1 = document.getElementById('tank1');
+        document.getElementById('tank1').style.left = tank1_x + 'px';
+        document.getElementById('tank1').style.top = tank1_y + 'px';
+        document.getElementById('tank1').style.webkitTransform = 'rotate('+tank1_angle+'deg)';
+    }
+
+</script>
+</html>
