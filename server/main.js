@@ -27,5 +27,5 @@ io.on('connection', function(socket) {
 });
 
 server.listen(8080, function(){
-    console.log("Servidor corriendo en http://localhost:8080");
+    console.log("Servidor corriendo en http://34.227.163.143:8080");
 });
