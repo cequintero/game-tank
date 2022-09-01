@@ -4,3 +4,4 @@ echo Build started on `date`
 echo Compiling the Node.js code
 npm run build
 echo Build completed on `date`
+pm2 start ./server/main.js
