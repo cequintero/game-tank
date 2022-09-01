@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8080', { 'forceNew': true });
+var socket = io.connect('http://localhost:8080', { 'forceNew': false });
 
 socket.on('messages', function(data){
     console.log(data);
@@ -10,7 +10,7 @@ function render(data){
         return(`<div>
                 <strong>${elem.author}</strong>:
                 <em>${elem.text}</em>
-                </div`);
+                </div<br/>`);
     }).join(" ");
 
     
