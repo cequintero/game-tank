@@ -1,0 +1,28 @@
+            .obstaculos{
+                height: 20px;
+                width: 100px;
+                background-color: gray;
+                position: absolute;
+            }
+            .tank{
+                width: 98.5px;
+                height: 58px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 5;
+                background-image: url(../assets/img/tank-top1.png);
+                background-size: contain;
+                transform: rotate(0deg);
+            }
+            .body{
+                background-color: darkolivegreen;
+            }
+            .bala{
+                width: 40px;
+                height: 6.5px;
+                background-size: contain;
+                position: absolute;
+                background-image: url(../assets/img/bullet.png);
+                z-index: 6;
+            }
