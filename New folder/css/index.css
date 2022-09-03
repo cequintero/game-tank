@@ -1,7 +1,15 @@
-            .obstaculos{
-                height: 20px;
-                width: 100px;
-                background-color: gray;
+            .mapa{
+                width: 1280px;
+                height: 720px;
+                position: relative;
+                border: 10px solid darkolivegreen;
+                z-index: 10;
+                background-color: #99725F;
+            }
+            .bloque{
+                height: 100px;
+                width: 20px;
+                background-color: #9A9A9A;
                 position: absolute;
             }
             .tank{
