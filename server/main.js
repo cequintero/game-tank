@@ -11,8 +11,8 @@ app.get("/", function (request, response) {
 // Serve the assets directory
 app.use('/assets',express.static('assets'))
 
-// Listen on port 5000
-app.set('port', (process.env.PORT || 5000));
+// Listen on port 8080
+app.set('port', (process.env.PORT || 8080));
 http.listen(app.get('port'), function(){
   console.log('listening on port',app.get('port'));
 });
