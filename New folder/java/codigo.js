@@ -13,8 +13,11 @@ class Bloque{
 }
 //bloques en el mapa
 const bloques = [
-    new Bloque(200, 250),
-    new Bloque(1100,250)
+    new Bloque(200, 0),
+    new Bloque(1030,0),
+    new Bloque(200, 620),
+    new Bloque(1030, 620),
+    new Bloque(640, 320)
 ];
 function addBloques(){
     for(let i = 0; i < bloques.length; i++){
@@ -27,13 +30,13 @@ function addBloques(){
 }
 addBloques();
 function generarjugador1(){
-    tank1.style.left = 0 + 'px';
-    tank1.style.bottom = 600 + 'px';
+    tank1.style.left = 50 + 'px';
+    tank1.style.bottom = 640 + 'px';
 }
 function generarjugador2(){
     tank2.style.left = 1100 + 'px';
-    tank2.style.bottom = 600 + 'px';
-    tank2.style.rotate = 180 + 'deg';
+    tank2.style.bottom = 20 + 'px';
+    tank2.style.rotate = 180 + 'deg';   
 }
 var tank_speed = 0;
 var tank_x = 0;
