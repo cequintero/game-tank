@@ -10,7 +10,7 @@ app.get("/", function (request, response) {
 });
 
 // Serve the assets directory
-app.use("/assets", express.static("/assets/img"));
+app.use("/assets", express.static("../assets/img"));
 
 // Listen on port 8080
 app.set("port", process.env.PORT || 8080);
