@@ -31,8 +31,9 @@ function generarjugador1(){
     tank1.style.bottom = 600 + 'px';
 }
 function generarjugador2(){
-    tank1.style.left = 1100 + 'px';
-    tank1.style.bottom = 600 + 'px';
+    tank2.style.left = 1100 + 'px';
+    tank2.style.bottom = 600 + 'px';
+    tank2.style.rotate = 180 + 'deg';
 }
 var tank_speed = 0;
 var tank_x = 0;
@@ -48,8 +49,3 @@ mapa.appendChild(tank2);
 generarjugador1();
 generarjugador2();
 
-
-window.onload = function(){
-
-    };
-    
