@@ -5,7 +5,7 @@ var io = require("socket.io")(http); // Here's where we include socket.io as a n
 
 // Serve the index page
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + "/public/index.html");
+  response.sendFile(__dirname + "../public/index.html");
 });
 
 // Serve the assets directory
