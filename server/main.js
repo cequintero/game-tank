@@ -4,13 +4,15 @@ var app = express();
 var http = require("http").Server(app);
 var io = require("socket.io")(http); // Here's where we include socket.io as a node module
 
+// Serve the assets directory
+app.use("/assets", express.static(path.join(__dirname, "../assets/img")));
+console.log(path.join(__dirname, "../assets/img"))
+
 // Serve the index page
 app.get("/", function (request, response) {
   response.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
-// Serve the assets directory
-app.use("/assets", express.static("../assets/img"));
 
 // Listen on port 8080
 app.set("port", process.env.PORT || 8080);
