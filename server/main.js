@@ -1,3 +1,4 @@
+var path = require('path');
 var express = require("express"); // Express contains some boilerplate to for routing and such
 var app = express();
 var http = require("http").Server(app);
