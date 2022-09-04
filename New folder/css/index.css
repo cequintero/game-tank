@@ -1,35 +1,41 @@
-            .mapa{
-                width: 1280px;
-                height: 720px;
-                position: relative;
-                border: 10px solid darkolivegreen;
-                z-index: 10;
-                background-color: #99725F;
-            }
-            .bloque{
-                height: 100px;
-                width: 20px;
-                background-color: #9A9A9A;
-                position: absolute;
-            }
-            .tank{
-                width: 98.5px;
-                height: 58px;
-                position: absolute;
-                left: 0;
-                z-index: 5;
-                background-image: url(../assets/img/tank-top1.png);
-                background-size: contain;
-                transform: rotate(0deg);
-            }
-            .body{
-                background-color: darkolivegreen;
-            }
-            .bala{
-                width: 40px;
-                height: 6.5px;
-                background-size: contain;
-                position: absolute;
-                background-image: url(../assets/img/bullet.png);
-                z-index: 6;
-            }
+.mapa{
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    border: 10px solid darkolivegreen;
+    z-index: 10;
+    background-color: #99725F;
+}
+.bloquev{
+    height: 100px;
+    width: 20px;
+    background-color: #9A9A9A;
+    position: absolute;
+}
+.bloqueh{
+    height: 20px;
+    width: 100px;
+    background-color: #9A9A9A;
+    position: absolute;
+}
+.tank{
+    width: 98.5px;
+    height: 58px;
+    position: relative;
+    left: 0;
+    z-index: 5;
+    background-image: url(../assets/img/tank-top1.png);
+    background-size: contain;
+    transform: rotate(0deg);
+}
+.body{
+    background-color: darkolivegreen;
+}
+.bala{
+    width: 40px;
+    height: 6.5px;
+    background-size: contain;
+    position: absolute;
+    background-image: url(../assets/img/bullet.png);
+    z-index: 6;
+}
